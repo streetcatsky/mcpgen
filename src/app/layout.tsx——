@@ -1,0 +1,22 @@
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+    title: "MCPGen — AI-Powered MCP Server Generator",
+    description: "Transform any REST API into a production-ready MCP server in 60 seconds. Paste your OpenAPI spec or describe your API — get deployable code instantly.",
+    keywords: ["MCP", "Model Context Protocol", "AI", "API", "Server Generator", "Claude", "OpenAI"],
+};
+
+export default function RootLayout({
+    children,
+}: {
+    children: React.ReactNode;
+}) {
+    return (
+          <html lang="en">
+                <body className="antialiased">
+                  {children}
+                </body>body>
+          </html>html>
+        );
+}</html>
